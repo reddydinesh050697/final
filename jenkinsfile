@@ -2,7 +2,7 @@ pipeline {
 agent any
 stages {
 stage ("SCM"){
-steps {git 'https://github.com/awspandian/sam-0803.git'}
+steps {git 'https://github.com/awspandian/final.git'}
 }
 stage ("Build"){
 steps {
