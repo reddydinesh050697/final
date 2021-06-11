@@ -3,7 +3,7 @@ agent any
 stages{
 stage ('scm'){
 steps {
-git 'https://github.com/awspandian/final.git'
+git 'https://github.com/Netha1999/final.git'
 }
 }
 stage ('build'){
