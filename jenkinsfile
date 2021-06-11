@@ -1,14 +1,16 @@
 pipeline {
 agent any
-stages {
-stage ("SCM"){
-steps {git 'https://github.com/Netha1999/final.git'}
-}
-stage ("Build"){
+stages{
+stage ('scm'){
 steps {
-		sh 'mvn clean'
-		sh 'mvn install' }
+git 'https://github.com/awspandian/final.git'
 }
-
+}
+stage ('build'){
+steps {
+bat label: '', script: 'mvn clean'
+bat label: '', script: 'mvn install'
+}
+}
 }
 }
